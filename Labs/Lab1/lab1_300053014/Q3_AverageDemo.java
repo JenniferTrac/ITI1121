@@ -1,0 +1,27 @@
+/* Lab1
+Exercise 3: AverageDemo
+Jennifer Trac
+300053014
+*/
+
+public class Q3_AverageDemo{
+	public static void main(String[] args){
+		double[] valuesArray;
+		valuesArray = new double[]{100.0,34.0,72.0,56.0,82.0,67.0,94.0};
+		System.out.println("The average is: " + calculateAverage(valuesArray));
+	}
+
+	//method that calculates the average of the numbers in an array
+	public static double calculateAverage(double[] values){
+		double result;
+		double total = 0.0;
+
+		for (int i=0; i<values.length; i++) {
+			total += values[i];
+		}
+
+		result = total / values.length;
+
+		return result;
+	}
+}
